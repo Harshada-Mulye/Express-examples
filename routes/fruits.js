@@ -7,9 +7,9 @@ router.get('/',(req,res)=>{
 	res.send(fruits)
 })
 router.post('/',(req,res)=>{
-	//console.log('POST /fruits/', req.body);
-	let newFruit='mango'
-	//let newFruit=req.body
+	console.log('POST /fruits/', req.body);
+	//let newFruit='mango'
+	let newFruit=req.body
 	fruits.push(newFruit)
 	res.send('added new fruit')
 })
